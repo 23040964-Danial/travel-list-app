@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif; /* Updated font */
+  color: #2c3e50; /* Darker text for better readability */
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+h1 {
+  text-align: center;
+  background-color: #ff6f61; /* Vibrant coral background */
+  font-family: "Montserrat", sans-serif; /* Updated font */
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 700; /* Bolder weight for emphasis */
+  word-spacing: 30px;
+  letter-spacing: -5px;
+  padding: 2.4rem 0;
+}
+
+.add-form {
+  background-color: #f39c12; /* Bright orange background */
+  padding: 2.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+h3 {
+  margin-right: 1.6rem;
+  font-size: 2.4rem;
+}
+
+button,
+select,
+input {
+  background-color: #ffffff; /* White inputs for better visibility */
+  color: #2c3e50; /* Dark text for inputs */
+  font-family: inherit;
+  border: none;
+  border-radius: .5rem; /* Slightly less rounded corners */
+  padding: 1.2rem 3.2rem;
+  font-weight: bold; /* Bolder weight for buttons */
+  font-size: 1.8rem;
+}
+
+.add-form button {
+   text-transform: uppercase;
+   background-color: #27ae60; /* Fresh green button color */
+   color: white; /* White text on buttons */
+}
+
+.list {
+   background-color: #34495e; /* Dark blue-gray background */
+   color: #ecf0f1; /* Light text for readability */
+   padding: 4rem;
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   gap: 3.2rem;
+   align-items: center;
+}
+
+.actions button,
+.list select {
+   text-transform: uppercase;
+   padding:.8rem .8rem; 
+   font-size:.9rem; /* Slightly increased size for better usability */
+   font-weight:bold; 
+   margin:.8rem .4rem; 
+}
+
+.list ul {
+   list-style:none; 
+   width:80%; 
+   overflow:auto;
+
+   display:grid; 
+   grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); 
+   gap:.8rem; 
+   justify-content:center; 
+   align-content:start; 
+}
+
+.list li {
+   display:flex; 
+   align-items:center; 
+   gap:.8rem; 
+}
+
+input[type="checkbox"] {
+   height:.9rem; 
+   width:.9rem; 
+   accent-color:#e67e22; /* Orange checkbox accent color */
+}
+
+.list li button {
+   cursor:pointer; 
+   background:none; 
+   border:none; 
+   font-size:.9rem; 
+   padding:.8rem; 
+}
+
+.stats {
+    background-color:#27ae60; /* Fresh green for stats section */
+    text-align:center; 
+    font-weight:bold; 
+    padding:.8rem .0rem ;
+}
